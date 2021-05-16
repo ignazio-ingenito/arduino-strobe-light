@@ -171,7 +171,6 @@ void loop() {
 
   // run the current program
   programs[program]();
-  
 }
 
 void changeProgram() {
