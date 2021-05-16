@@ -179,8 +179,8 @@ void changeProgram() {
   // get the actual timestamp
   unsigned long interrupt_time = millis();
 
-  // if interrupts come faster than debounce_msecs,
-  // I'm assuming it's a bounce and ignore
+  // if an interrupts come faster than debounce_msecs
+  // I'm assuming it's a bounce so I'll ignore it
   if (interrupt_time - last_interrupt < debounce_msecs)
     Serial.print("bounce ignored\n");
   else
